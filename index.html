@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ellen Luo</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/scripts/jquery.js"></script>
+</head>
+
+<body>
+
+<nav id="fixed-nav-bar">
+    <ul>
+        <li><a class="active link" href=#title>Start</a></li>
+        <li><a class="link" href=#about id="nav-about">About</a></li>
+        <li><a class="link" href=#projects>Projects</a></li>
+        <li><a href="resume.pdf" target="_blank">Resumé</a></li>
+        <li><a class="link" href=#contact>Contact</a></li>
+    </ul>
+</nav>
+
+<section id="contact">
+    <div class="top-relative">
+        <h2 id="contact-title">Contact Me</h2>
+    </div>
+    <div class="centered-absolute">
+        <div>
+            <a href="mailto:ellen.luo@berkeley.edu" class="icon" id="mail" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/ellenluo" class="icon" id="linkedin" target="_blank"></a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com/ellen.luo.75" class="icon" id="facebook" target="_blank"></a>
+            <a href="https://github.com/ellenluo" class="icon" id="github" target="_blank"></a>
+        </div>
+    </div>
+    <div class="bottom-absolute">
+        <p class="copyright">&copy; Ellen Luo 2016</p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="top-relative">
+        <h2>Projects</h2>
+    </div>
+    <div class="scroll-outer div-max-width">
+        <div class="project" id="minimalist">
+            <div class="project-upper">
+                <div class="project-title">
+                    <h4>MinimaList</h4>
+                    <p>Android to-do application offering the ideal intersection of simplicity and functionality.
+                        Features a
+                        side navigation drawer, lists/labels, customizable reminders, a SQLite database, customizable
+                        widget, and elegant material design. Built with Java, XML and SQLite using Android Studio.</p>
+                </div>
+                <img class="project-img" src="assets/images/minimalist.png"/>
+            </div>
+            <div class="project-details">
+                <p class="details-text">~100 lines Java &emsp;</p>
+                <p class="details-text">~100 lines XML &emsp;</p>
+                <p class="details-text">~100 lines SQLite &emsp;</p>
+            </div>
+        </div>
+        <div class="project" id="screen-off">
+            <div class="project-upper">
+                <div class="project-title">
+                    <h4>Screen Off</h4>
+                    <p>Android and web application built using mongoDB, Node.js, Java, XML, SQLite, JavaScript and
+                        Bootstrap
+                        with a team of four at MasseyHacks II. Allows groups of users to track phone usage and screen on
+                        time and share results with others. Features JSON parsing, background services and network
+                        syncing.</p>
+                </div>
+                <img class="project-img" src="assets/images/screenoff.png"/>
+            </div>
+            <div class="project-details">
+                <p class="details-text">~100 lines Java &emsp;</p>
+                <p class="details-text">~100 lines XML &emsp;</p>
+                <p class="details-text">~100 lines SQLite &emsp;</p>
+            </div>
+        </div>
+        <div class="project" id="personal-website">
+            <div class="project-upper">
+                <div class="project-title">
+                    <h4>Personal Website</h4>
+                    <p>My personal website, built from scratch using HTML, CSS and Javascript/JQuery.</p>
+                </div>
+                <img class="project-img" src="assets/images/personal-website.png"/>
+            </div>
+            <div class="project-details">
+                <p class="details-text">~100 lines Java &emsp;</p>
+                <p class="details-text">~100 lines XML &emsp;</p>
+                <p class="details-text">~100 lines SQLite &emsp;</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="top-relative">
+        <h2>About Me</h2>
+    </div>
+    <div class="div-max-width">
+        <img class="border-img" src="assets/images/portrait.png" width="150px">
+        <p class="block-text">Hi, I'm Ellen Luo, a software developer born and raised in London, Canada. I am
+            currently a 18-year-old student majoring in Electrical Engineering and Computer Science at UC Berkeley.
+            Computer science and design are two of my greatest passions, and I love channeling my enthusiasm for
+            both through personal projects. I love to learn new things and am always eager to accept constructive
+            criticism and new ideas.</p>
+        <p class="left-text">I'm proficient in Java, and can apply it to build Android apps (Java/XML/SQLite), as
+            well as GUI apps using Java Swing. I am also familiar with Python, HTML and CSS, and have recently begun to
+            learn Javascript and JQuery. I'm comfortable using design and development software such as Adobe
+            Photoshop, Adobe Flash, Intellij Idea, Android Studio and WebStorm, and am always on the lookout to pick
+            up new skills.</p>
+        <p class="left-text">Aside from programming, I love drawing and painting both digitally and traditionally,
+            and play various instruments, including the piano, clarinet and (electric and acoustic) guitar.
+            Athletics-wise, I play soccer with friends during the summer, and snowboard down slopes up North during
+            the winter.</p>
+    </div>
+</section>
+
+<section id="title" class="page">
+    <div class="top-absolute" id="title-arrow">
+        <a href=#about><img src="assets/images/up-arrow.png" width="50px" height="25px"></a>
+    </div>
+    <div class="centered-absolute">
+        <h1 id="title-name">Ellen Luo</h1>
+        <h3 class="border-text" id="title-desc">Developer &middot; Designer &middot; Athlete &middot; Musician &middot;
+            Innovator</h3>
+    </div>
+</section>
+
+<script src="assets/scripts/main.js"></script>
+
+</body>
+</html>

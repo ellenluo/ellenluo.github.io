@@ -1,0 +1,445 @@
+/* CH01 - Resets
+ * CH02 - General Setup
+ * CH03 - Navigation Menu
+ * CH04 - Title Screen
+ * CH05 - About Screen
+ * CH06 - Projects Screen
+ * CH07 - Resume Screen
+ * CH08 - Contact Screen
+ * CH09 - Responsive Design
+*/
+
+/* CH01 - Resets */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CH02 - General Setup */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+body, html {
+    background: #466368;
+    background: -webkit-linear-gradient(#73BAAA 25%, #0B2E40);
+    background: -moz-linear-gradient(#73BAAA 25%, #0B2E40);
+    background: linear-gradient(#73BAAA 25%, #0B2E40);
+}
+
+a {
+    text-decoration: none;
+    font: 14px/150% 'Century Gothic', Arial, sans-serif;
+    color: #949494;
+}
+
+h1 {
+    font: 50px/150% 'Century Gothic', Arial, sans-serif;
+}
+
+h2 {
+    font: 40px/150% 'Century Gothic', Arial, sans-serif;
+}
+
+h3 {
+    font: 16px/150% 'Century Gothic', Arial, sans-serif;
+    color: #2E64D9;
+}
+
+h4 {
+    font: bold 20px/150% 'Century Gothic', Arial, sans-serif;
+    margin-bottom: 1%;
+}
+
+p {
+    font: 14px/150% Verdana, Arial, sans-serif;
+    color: #949494;
+    margin-bottom: 20px;
+}
+
+img {
+    margin: 0 10px 10px 0;
+}
+
+section {
+    min-height: 100vh;
+    margin: 40px 10px 0 10px;
+    position: relative;
+}
+
+::selection {
+    background: white;
+    color: #2E64D9;
+}
+
+::-moz-selection {
+    background: white;
+    color: #2E64D9;
+}
+
+/* CH02 - Navigation Menu */
+
+#fixed-nav-bar ul {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    border-top: 2px solid #2E64D9;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#fixed-nav-bar li {
+    display: inline-block;
+    margin: 0 1%;
+    height: 50px;
+    line-height: 50px;
+}
+
+#fixed-nav-bar li a {
+    display: block;
+    line-height: 50px;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
+}
+
+#fixed-nav-bar li a:hover {
+    color: #2E64D9;
+}
+
+#fixed-nav-bar .active {
+    color: #2E64D9;
+}
+
+/* CH03 - Title Screen */
+
+#title {
+    text-align: center;
+}
+
+.top-absolute {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.centered-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.border-text {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #2E64D9;
+}
+
+/* CH05 - About Screen */
+
+.top-relative {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.border-img {
+    float: left;
+    border: 2px solid white;
+}
+
+.block-text {
+    display:block;
+}
+
+.div-max-width {
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CH06 - Projects Screen */
+
+.scroll-outer {
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+}
+
+.project {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 0;
+    background: #0B2E40;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+}
+
+.project-details {
+    background: white;
+    width: 100%;
+    padding: 10px;
+    flex: 0 1 auto;
+}
+
+.project-upper {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.project-img {
+    display: none;
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
+
+.project-title {
+    padding: 20px 10px 10px 10px;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.details-text {
+    margin-bottom: 0;
+    display: inline-block;
+    color: #2E64D9;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* CH08 - Contact Screen */
+
+#contact {
+    margin: 0;
+    text-align: center;
+    background-image: url('../images/background.png');
+    background-size: cover;
+}
+
+#contact-title {
+    color: #2E64D9;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    display: inline-block;
+}
+
+#mail {
+    background-image: url('../images/mail.png');
+    background-size: cover;
+}
+
+#mail:hover {
+    background-image: url('../images/mail-hover.png');
+}
+
+#linkedin {
+    background-image: url('../images/linkedin.png');
+    background-size: cover;
+}
+
+#linkedin:hover {
+    background-image: url('../images/linkedin-hover.png');
+}
+
+#facebook {
+    background-image: url('../images/facebook.png');
+    background-size: cover;
+}
+
+#facebook:hover {
+    background-image: url('../images/facebook-hover.png')
+}
+
+#github {
+    background-image: url('../images/github.png');
+    background-size: cover;
+}
+
+#github:hover {
+    background-image: url('../images/github-hover.png');
+}
+
+.bottom-absolute {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+}
+
+.copyright {
+    color: white;
+    margin-bottom: 60px;
+    font-size: 12px;
+}
+
+/* CH09 - Responsive Design */
+
+@media (min-width: 500px) {
+    h1 {
+        font-size: 90px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    section {
+        margin: 40px 15px 0 15px;
+    }
+
+    img {
+        margin: 0 15px 15px 0;
+    }
+
+    .top-relative {
+        padding: 30px 0;
+    }
+
+    .border-img {
+        width: 200px;
+    }
+
+    .project-title {
+        padding: 30px 15px 15px 15px;
+    }
+
+    .project-details {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    h2 {
+        font-size: 60px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    section {
+        margin: 40px 20px 0 20px
+    }
+
+    img {
+        margin: 0 20px 20px 0;
+    }
+
+    .top-relative {
+        padding-top: 60px;
+    }
+
+    .border-img {
+        width: 250px;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .project-img {
+        display: block;
+    }
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 140px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .border-img {
+        width: 300px;
+    }
+}
+
+
