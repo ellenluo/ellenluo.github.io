@@ -127,6 +127,11 @@ section {
     position: relative;
 }
 
+figure {
+    width: 100%;
+    height: 100%;
+}
+
 ::selection {
     background: white;
     color: #2E64D9;
@@ -135,6 +140,20 @@ section {
 ::-moz-selection {
     background: white;
     color: #2E64D9;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2E64D9;
 }
 
 /* CH02 - Navigation Menu */
@@ -215,7 +234,7 @@ section {
 }
 
 .block-text {
-    display:block;
+    display: block;
 }
 
 .div-max-width {
@@ -227,57 +246,129 @@ section {
 
 /* CH06 - Projects Screen */
 
-.scroll-outer {
-    overflow: auto;
-    width: 100%;
+.project-items {
     height: 400px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.project-items li {
+    display: inline-block;
+    vertical-align: top;
 }
 
 .project {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 0;
-    background: #0B2E40;
+    width: 300px;
+    height: 202px;
+    margin: 150px 20px 0;
+    padding: 5px;
+    border-radius: 2px;
     position: relative;
-    display: flex;
-    flex-flow: column;
-    cursor: pointer;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    font-size: 14px;
+    -webkit-transition: all .3s ease, opacity 2s ease, top 1s ease;
+    -o-transition: all .3s ease, opacity 2s ease, top 1s ease;
+    transition: all .3s ease, opacity 2s ease, top 1s ease
 }
 
-.project-details {
-    background: white;
+.view {
+    overflow: hidden;
     width: 100%;
-    padding: 10px;
-    flex: 0 1 auto;
+    height: 190px;
+    position: relative;
 }
 
-.project-upper {
+.view img {
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+    width: 100%;
     margin: 0;
-    height: 100%;
-    display: flex;
-    flex: 1 1 auto;
+    position: absolute;
 }
 
-.project-img {
-    display: none;
-    margin: 0;
-    height: 100%;
-    width: auto;
+figcaption {
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+figcaption p {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 10px;
+    margin: 5px 0;
+    width: 100%;
+}
+
+figcaption a {
+    font: bold 12px/150% Verdana, Arial, sans-serif;
+    color: #2E64D9;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    -webkit-transition: color .5s ease;
+    transition: color .5s ease;
 }
 
 .project-title {
-    padding: 20px 10px 10px 10px;
-    flex-grow: 1;
-    height: 100%;
+    z-index: 1;
+    width: 150px;
+    height: 30px;
+    color: white;
+    font: bold 14px/30px 'Century Gothic', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 1px;
+    background-color: #2E64D9;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+    -o-transition: -o-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+    transition: -webkit-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+    transition: -ms-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+    transition: -o-transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92);
+    transition: transform 0.5s cubic-bezier(0.12, 1.6, 0.91, 0.92)
 }
 
-.details-text {
-    margin-bottom: 0;
-    display: inline-block;
-    color: #2E64D9;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
+.project:hover {
+    height: 270px;
+    -webkit-transform: translateY(-68px);
+    -ms-transform: translateY(-68px);
+    -o-transform: translateY(-68px);
+    transform: translateY(-68px)
+}
+
+.project:hover .project-title {
+    -webkit-transform: translate3d(0, 61px, 0);
+    -ms-transform: translate3d(0, 61px, 0);
+    -o-transform: translate3d(0, 61px, 0);
+    transform: translate3d(0, 61px, 0)
+}
+
+.project:hover figcaption {
+    -webkit-animation: show .25s ease-in .120s forwards;
+    -o-animation: show .25s ease-in .120s forwards;
+    animation: show .25s ease-in .120s forwards;
+}
+
+figcaption a:hover {
+    color: #949494;
+}
+
+@keyframes show {
+    to {
+        opacity: 1;
+    }
 }
 
 /* CH08 - Contact Screen */
@@ -298,6 +389,10 @@ section {
     height: 50px;
     margin: 0;
     display: inline-block;
+    -webkit-transition: background-image 0.25s ease-out;
+    -moz-transition: background-image 0.25s ease-out;
+    -o-transition: background-image 0.25s ease-out;
+    transition: background-image 0.25s ease-out;
 }
 
 #mail {
@@ -385,13 +480,6 @@ section {
         width: 200px;
     }
 
-    .project-title {
-        padding: 30px 15px 15px 15px;
-    }
-
-    .project-details {
-        padding: 15px;
-    }
 }
 
 @media (min-width: 750px) {
@@ -428,9 +516,6 @@ section {
         height: 60px;
     }
 
-    .project-img {
-        display: block;
-    }
 }
 
 @media (min-width: 1000px) {

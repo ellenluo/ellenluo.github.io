@@ -7,26 +7,26 @@ $('#title-desc').css('visibility', 'hidden');
 $titleArrow.css('opacity', '0');
 $fixedNavBar.css('visibility', 'hidden');
 
-setTimeout(function() {
-    $('#title-name').css('visibility','visible').hide().fadeIn();
+setTimeout(function () {
+    $('#title-name').css('visibility', 'visible').hide().fadeIn();
 }, 500);
 
-setTimeout(function() {
-    $('#title-desc').css('visibility','visible').hide().fadeIn();
+setTimeout(function () {
+    $('#title-desc').css('visibility', 'visible').hide().fadeIn();
 }, 1000);
 
-setTimeout(function() {
-    $fixedNavBar.css('visibility','visible').hide().fadeIn();
+setTimeout(function () {
+    $fixedNavBar.css('visibility', 'visible').hide().fadeIn();
 }, 1500);
 
-setTimeout(function() {
+setTimeout(function () {
     $titleArrow.animate({
         opacity: 1,
         'marginTop': "-=30px"
     }, 800);
 }, 2000);
 
-$(document).on('click', '.link', function(event){
+$(document).on('click', '.link', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
@@ -34,12 +34,12 @@ $(document).on('click', '.link', function(event){
     }, 2000);
 });
 
-$fixedNavBar.find('.link').click(function() {
+$fixedNavBar.find('.link').click(function () {
     $fixedNavBar.find('.link').removeClass();
     $(this).addClass('active link');
 });
 
-$titleArrow.click(function() {
+$titleArrow.click(function () {
     $fixedNavBar.find('.link').removeClass();
     $('#nav-about').addClass('active link');
 
@@ -48,14 +48,20 @@ $titleArrow.click(function() {
     }, 2000);
 });
 
-$("#minimalist").click(function() {
+$("#minimalist").click(function () {
     window.open("https://github.com/ellenluo/minimaList");
 });
 
-$("#screen-off").click(function() {
+$("#screen-off").click(function () {
     window.open("https://github.com/Tyler-Zhang/ScreenOff");
 });
 
-$("#personal-website").click(function() {
+$("#personal-website").click(function () {
     window.open("https://github.com/ellenluo/personal-website");
+});
+
+var list = $('.project-items');
+list.mousewheel(function(event, delta) {
+    this.scrollLeft -= (delta * 60);
+    event.preventDefault();
 });
