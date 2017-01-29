@@ -235,6 +235,7 @@ figure {
 
 .block-text {
     display: block;
+    color: #2B2B2B;
 }
 
 .div-max-width {
@@ -381,7 +382,7 @@ figcaption a:hover {
 }
 
 #contact-title {
-    color: #2E64D9;
+    color: #2B2B2B;
 }
 
 .icon {
