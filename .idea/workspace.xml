@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83102f64-ca12-49fa-9e83-4545bbbb9709" name="Default" comment="Completely remade projects display, added transitions and updated images/resume.">
+    <list default="true" id="83102f64-ca12-49fa-9e83-4545bbbb9709" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/assets/stylesheets/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="ellenluo.github.io.iws" />
@@ -30,11 +29,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="23" />
+            <state relative-caret-position="561">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
-                <element signature="e#2373#2379#0" expanded="true" />
-                <element signature="e#2379#2385#0" expanded="true" />
+                <element signature="e#2852#2858#0" expanded="true" />
+                <element signature="e#2858#2864#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,7 +42,7 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/stylesheets/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
+            <state relative-caret-position="7821">
               <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
               <folding />
             </state>
@@ -70,8 +69,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/scripts/main.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/stylesheets/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -274,7 +273,8 @@
       <workItem from="1479711145133" duration="806000" />
       <workItem from="1485203749739" duration="736000" />
       <workItem from="1485224930123" duration="10875000" />
-      <workItem from="1485729037098" duration="561000" />
+      <workItem from="1485729037098" duration="581000" />
+      <workItem from="1485860199529" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="Updated resume and project descriptions.">
       <created>1477306480861</created>
@@ -297,11 +297,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485235723020</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Edited text colors.">
+      <created>1485729695387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1485729695387</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14307000" />
+    <option name="totallyTimeSpent" value="14412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -343,7 +350,8 @@
     <MESSAGE value="Updated resume and project descriptions." />
     <MESSAGE value="Updated resume." />
     <MESSAGE value="Completely remade projects display, added transitions and updated images/resume." />
-    <option name="LAST_COMMIT_MESSAGE" value="Completely remade projects display, added transitions and updated images/resume." />
+    <MESSAGE value="Edited text colors." />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited text colors." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -352,11 +360,30 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7821">
+          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2541">
           <caret line="77" column="51" lean-forward="false" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
           <folding>
-            <element signature="e#2373#2379#0" expanded="true" />
-            <element signature="e#2379#2385#0" expanded="true" />
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -392,8 +419,8 @@
         <state relative-caret-position="1650">
           <caret line="50" column="51" lean-forward="false" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
           <folding>
-            <element signature="e#2373#2379#0" expanded="true" />
-            <element signature="e#2379#2385#0" expanded="true" />
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -424,8 +451,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2373#2379#0" expanded="true" />
-            <element signature="e#2379#2385#0" expanded="true" />
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -451,8 +478,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2373#2379#0" expanded="true" />
-            <element signature="e#2379#2385#0" expanded="true" />
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -493,7 +520,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/stylesheets/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
+        <state relative-caret-position="7821">
           <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
           <folding />
         </state>
@@ -501,11 +528,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="142" column="23" lean-forward="false" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="23" />
+        <state relative-caret-position="561">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
-            <element signature="e#2373#2379#0" expanded="true" />
-            <element signature="e#2379#2385#0" expanded="true" />
+            <element signature="e#2852#2858#0" expanded="true" />
+            <element signature="e#2858#2864#0" expanded="true" />
           </folding>
         </state>
       </provider>
