@@ -68,11 +68,6 @@ table {
 
 /* CH02 - General Setup */
 
-@font-face {
-    font-family: "Century Gothic";
-    src: url('../fonts/century-gothic.ttf') format('truetype');
-}
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -89,30 +84,30 @@ body, html {
 
 a {
     text-decoration: none;
-    font: 14px/150% 'Century Gothic', Arial, sans-serif;
+    font: 14px/150% 'Raleway', Arial, sans-serif;
     color: #949494;
 }
 
 h1 {
-    font: 50px/150% 'Century Gothic', Arial, sans-serif;
+    font: 50px/150% 'Raleway', Arial, sans-serif;
 }
 
 h2 {
-    font: 40px/150% 'Century Gothic', Arial, sans-serif;
+    font: 40px/150% 'Raleway', Arial, sans-serif;
 }
 
 h3 {
-    font: 16px/150% 'Century Gothic', Arial, sans-serif;
+    font: 500 16px/150% 'Raleway', Arial, sans-serif;
     color: #2E64D9;
 }
 
 h4 {
-    font: bold 20px/150% 'Century Gothic', Arial, sans-serif;
+    font: bold 20px/150% 'Raleway', Arial, sans-serif;
     margin-bottom: 1%;
 }
 
 p {
-    font: 14px/150% Verdana, Arial, sans-serif;
+    font: 14px/150% 'PT Sans', Arial, sans-serif;
     color: #949494;
     margin-bottom: 20px;
 }
@@ -171,12 +166,13 @@ figure {
 
 #fixed-nav-bar li {
     display: inline-block;
-    margin: 0 1%;
+    margin: 0 5px;
     height: 50px;
     line-height: 50px;
 }
 
 #fixed-nav-bar li a {
+    font-weight: 500;
     display: block;
     line-height: 50px;
     -moz-transition: color .5s ease;
@@ -312,7 +308,7 @@ figcaption p {
 }
 
 figcaption a {
-    font: bold 12px/150% Verdana, Arial, sans-serif;
+    font: bold 12px/150% 'PT Sans', Arial, sans-serif;
     color: #2E64D9;
     -moz-transition: color .5s ease;
     -o-transition: color .5s ease;
@@ -322,10 +318,10 @@ figcaption a {
 
 .project-title {
     z-index: 1;
-    width: 150px;
+    width: 160px;
     height: 30px;
     color: white;
-    font: bold 14px/30px 'Century Gothic', Arial, sans-serif;
+    font: 600 14px/30px 'Raleway', Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
     border-radius: 1px;
@@ -481,6 +477,10 @@ figcaption a:hover {
         width: 200px;
     }
 
+    #fixed-nav-bar li {
+        margin: 0 10px;
+    }
+
 }
 
 @media (min-width: 750px) {
@@ -517,6 +517,10 @@ figcaption a:hover {
         height: 60px;
     }
 
+    #fixed-nav-bar li {
+        margin: 0 15px;
+    }
+
 }
 
 @media (min-width: 1000px) {
@@ -528,7 +532,15 @@ figcaption a:hover {
         font-size: 28px;
     }
 
+    p {
+        font-size: 18px;
+    }
+
     .border-img {
         width: 300px;
+    }
+
+    #fixed-nav-bar li {
+        margin: 0 20px;
     }
 }
