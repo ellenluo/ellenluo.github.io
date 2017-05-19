@@ -227,6 +227,7 @@ figure {
 .border-img {
     float: left;
     border: 2px solid white;
+    margin-top: 5px;
 }
 
 .block-text {
@@ -474,7 +475,7 @@ figcaption a:hover {
     }
 
     .border-img {
-        width: 200px;
+        width: 250px;
     }
 
     #fixed-nav-bar li {
@@ -509,7 +510,7 @@ figcaption a:hover {
     }
 
     .border-img {
-        width: 250px;
+        width: 300px;
     }
 
     .icon {
@@ -537,7 +538,7 @@ figcaption a:hover {
     }
 
     .border-img {
-        width: 300px;
+        width: 350px;
     }
 
     #fixed-nav-bar li {
