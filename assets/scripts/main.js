@@ -6,6 +6,9 @@ $('#title-name').css('visibility', 'hidden');
 $('#title-desc').css('visibility', 'hidden');
 $titleArrow.css('opacity', '0');
 $fixedNavBar.css('visibility', 'hidden');
+$fixedNavBar.find('ul').css('visibility', 'hidden');
+$fixedNavBar.find('li').css('visibility', 'hidden');
+$fixedNavBar.find('a').css('visibility', 'hidden');
 
 setTimeout(function () {
     $('#title-name').css('visibility', 'visible').hide().fadeIn();
@@ -17,6 +20,9 @@ setTimeout(function () {
 
 setTimeout(function () {
     $fixedNavBar.css('visibility', 'visible').hide().fadeIn();
+    $fixedNavBar.find('ul').css('visibility', 'visible').hide().fadeIn();
+    $fixedNavBar.find('li').css('visibility', 'visible').hide().fadeIn();
+    $fixedNavBar.find('a').css('visibility', 'visible').hide().fadeIn();
 }, 1500);
 
 setTimeout(function () {
