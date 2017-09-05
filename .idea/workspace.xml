@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="83102f64-ca12-49fa-9e83-4545bbbb9709" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheets/main.css" afterPath="$PROJECT_DIR$/assets/stylesheets/main.css" />
     </list>
     <ignored path="ellenluo.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -295,7 +294,7 @@
       <workItem from="1498344433933" duration="4460000" />
       <workItem from="1499669509589" duration="4000" />
       <workItem from="1501112022537" duration="3090000" />
-      <workItem from="1503630435726" duration="153000" />
+      <workItem from="1503630435726" duration="183000" />
     </task>
     <task id="LOCAL-00001" summary="Updated resume and project descriptions.">
       <created>1477306480861</created>
@@ -374,15 +373,22 @@
       <option name="project" value="LOCAL" />
       <updated>1498210783725</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fix overflow">
+      <created>1503630604207</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1503630604207</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45814000" />
+    <option name="totallyTimeSpent" value="45844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18997361" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -447,7 +453,8 @@
     <MESSAGE value="Fix compatibility issues with IE/Edge and change color scheme" />
     <MESSAGE value="Change hover icons and fix styling" />
     <MESSAGE value="Remove preloaded images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove preloaded images" />
+    <MESSAGE value="Fix overflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix overflow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
