@@ -72,9 +72,9 @@ table {
 
 body, html {
     background: #466368;
-    background: -webkit-linear-gradient(#73BAAA 25%, #0B2E40);
-    background: -moz-linear-gradient(#73BAAA 25%, #0B2E40);
-    background: linear-gradient(#73BAAA 25%, #0B2E40);
+    background: -webkit-linear-gradient(#73BAAA 25%, #002d60);
+    background: -moz-linear-gradient(#73BAAA 25%, #002d60);
+    background: linear-gradient(#73BAAA 25%, #002d60);
 }
 
 a {
