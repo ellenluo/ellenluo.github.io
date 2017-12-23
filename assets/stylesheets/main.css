@@ -72,29 +72,31 @@ table {
 
 body, html {
     background: #466368;
-    background: -webkit-linear-gradient(#73BAAA 25%, #002d60);
+    background-color: white;
+    /*background: -webkit-linear-gradient(#73BAAA 25%, #002d60);
     background: -moz-linear-gradient(#73BAAA 25%, #002d60);
-    background: linear-gradient(#73BAAA 25%, #002d60);
+    background: linear-gradient(#73BAAA 25%, #002d60);*/
 }
 
 a {
     text-decoration: none;
     font: 14px/150% 'Raleway', Arial, sans-serif;
-    color: #949494;
+    color: #2B2B2B;
 }
 
 h1 {
     font: 50px/150% 'Raleway', Arial, sans-serif;
+    color: black;
 }
 
 h2 {
     font: 40px/150% 'Raleway', Arial, sans-serif;
-    color: #2B2B2B;
+    color: black;
 }
 
 h3 {
     font: 500 16px/150% 'Raleway', Arial, sans-serif;
-    color: #FF7700;
+    color: #0090ff;
 }
 
 h4 {
@@ -104,7 +106,7 @@ h4 {
 
 p {
     font: 14px/150% 'PT Sans', Arial, sans-serif;
-    color: #949494;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -125,12 +127,12 @@ figure {
 
 ::selection {
     background: #2B2B2B;
-    color: #FF7700;
+    color: #0090ff;
 }
 
 ::-moz-selection {
     background: #2B2B2B;
-    color: #FF7700;
+    color: #0090ff;
 }
 
 ::-webkit-scrollbar {
@@ -144,7 +146,7 @@ figure {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FF7700;
+    background-color: #0090ff;
 }
 
 /* CH02 - Navigation Menu */
@@ -156,8 +158,9 @@ figure {
     position: fixed;
     bottom: 0;
     z-index: 10000;
-    border-top: 2px solid #FF7700;
-    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 2px solid #0090ff;
+    background-color: white;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
 }
 
 #fixed-nav-bar li {
@@ -178,11 +181,11 @@ figure {
 }
 
 #fixed-nav-bar li a:hover {
-    color: #FF7700;
+    color: #0090ff;
 }
 
 #fixed-nav-bar .active {
-    color: #FF7700;
+    color: #0090ff;
 }
 
 /* CH03 - Title Screen */
@@ -210,7 +213,7 @@ figure {
 .border-text {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #FF7700;
+    border: 2px solid #0090ff;
 }
 
 /* CH05 - About Screen */
@@ -222,7 +225,7 @@ figure {
 
 .border-img {
     float: left;
-    border: 2px solid white;
+    border: 2px solid #2B2B2B;
     margin-top: 5px;
 }
 
@@ -262,7 +265,7 @@ figure {
     border-radius: 2px;
     position: relative;
     box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.5);
-    background-color: white;
+    background-color: #2B2B2B;
     font-size: 14px;
     -webkit-transition: all .3s ease, opacity 2s ease, top 1s ease;
     -o-transition: all .3s ease, opacity 2s ease, top 1s ease;
@@ -306,7 +309,7 @@ figcaption p {
 
 figcaption a {
     font: bold 12px/150% 'PT Sans', Arial, sans-serif;
-    color: #FF7700;
+    color: #0090ff;
     -moz-transition: color .5s ease;
     -o-transition: color .5s ease;
     -webkit-transition: color .5s ease;
@@ -322,7 +325,7 @@ figcaption a {
     text-transform: uppercase;
     text-align: center;
     border-radius: 1px;
-    background-color: #FF7700;
+    background-color: #0090ff;
     position: absolute;
     bottom: 30px;
     left: 15px;
@@ -370,7 +373,7 @@ figcaption a:hover {
 #contact {
     margin: 0;
     text-align: center;
-    background-image: url('../images/background.png');
+    background-image: url('../images/background2.png');
     background-size: cover;
 }
 
