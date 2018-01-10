@@ -373,8 +373,8 @@ figcaption a:hover {
 #contact {
     margin: 0;
     text-align: center;
-    background-image: url('../images/background2.png');
-    background-size: cover;
+    /*background-image: url('../images/background2.png');
+    background-size: cover;*/
 }
 
 #contact-title {
